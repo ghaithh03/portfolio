@@ -7,19 +7,65 @@
 
     <style>
 
+body {
+background-color: lightblue;
+
+}
+
 h1 {
     color: blue;
+    text-align: center;
 }
 
 .underoverskrift {
-    color: lightskyblue;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.portefølje {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    text-align: center;
+    line-height: 1.5;
+    border: 1px solid black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.portefølje:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px gray;
+
 }
 
     </style>
 
 </head>
 <body>
-    <h1>Velkommen til min portfølje</h1>
-    <h2 class="underoverskrift">Dette er min portfølje.</h2>
+    <h1>Velkommen til min portefølje</h1>
+    <h2 class="underoverskrift">Dette er min portefølje.</h2>
+
+    <div class="portefølje">
+        <h3>Restaurantnettsted</h3>
+        <p>Nettsted for restaurant.</p>
+        <p class="pris">249 kr</p>
+    </div>
+
+    <div class="portefølje">
+        <h3>Nettbutikk</h3>
+        <p>Nettsted for nettbutikk.</p>
+        <p class="pris">349 kr</p>
+    </div>
+
 </body>
 </html>
